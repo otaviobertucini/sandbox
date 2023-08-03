@@ -1,0 +1,30 @@
+[
+  {
+    "arguments": [9],
+    "method": "insert"
+  },
+  {
+    "arguments": [10],
+    "method": "insert"
+  },
+  {
+    "arguments": [11],
+    "method": "insert"
+  },
+  {
+    "arguments": [8],
+    "method": "insert"
+  },
+  {
+    "arguments": [6],
+    "method": "insert"
+  },
+  {
+    "arguments": [7],
+    "method": "insert"
+  },
+  {
+    "arguments": [9],
+    "method": "remove"
+  }
+  ]
