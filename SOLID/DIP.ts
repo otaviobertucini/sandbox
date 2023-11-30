@@ -31,13 +31,11 @@ class HondaTank implements Tank {
   constructor(public capacity: number) {}
 
   getFuel(quantity: number): number {
-    let delta = this.capacity - quantity;
-    if (delta < 0) {
-      delta = this.capacity;
-    }
+    const availableQuantity = Math.min(quantity, this.capacity);
 
-    this.capacity = this.capacity - delta;
-    return quantity;
+    this.capacity = this.capacity - availableQuantity;
+
+    return availableQuantity;
   }
 }
 

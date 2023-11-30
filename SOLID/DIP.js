@@ -12,12 +12,9 @@ var HondaTank = /** @class */ (function () {
         this.capacity = capacity;
     }
     HondaTank.prototype.getFuel = function (quantity) {
-        var delta = this.capacity - quantity;
-        if (delta < 0) {
-            delta = this.capacity;
-        }
-        this.capacity = this.capacity - delta;
-        return quantity;
+        var availableQuantity = Math.min(quantity, this.capacity);
+        this.capacity = this.capacity - availableQuantity;
+        return availableQuantity;
     };
     return HondaTank;
 }());
